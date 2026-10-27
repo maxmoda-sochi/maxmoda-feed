@@ -1,0 +1,53 @@
+{
+  "parts": [
+    {"uid": 138778991497, "title": "All"},
+    {"uid": 429066460061, "title": "Обувь"},
+    {"uid": 987369287300, "title": "Кроссовки"},
+    {"uid": 865956359370, "title": "Аксессуары"},
+    {"uid": 562760764911, "title": "SALE"},
+    {"uid": 533599596383, "title": "Marella"}
+  ],
+  "products": [
+    {
+      "uid": 523301036203, "title": "Кроссовки Premiata Mick 7244", "descr": "Кроссовки Mick 7244",
+      "price": "32900.0000", "priceold": "", "quantity": "", "brand": "PREMIATA",
+      "url": "https://www.maxmoda.ru/shoes/tproduct/178824402-523301036203-krossovki-premiata-mick-7244",
+      "partuids": "[429066460061,987369287300]",
+      "gallery": "[{\"alt\":\"фото 1\",\"img\":\"https:\\/\\/static.tildacdn.com\\/stor6664\\/a.jpg\"},{\"alt\":\"фото 2\",\"img\":\"https:\\/\\/static.tildacdn.com\\/stor3538\\/b.jpg\"}]",
+      "editions": [
+        {"sku": "68413-40", "price": "32 900.00", "priceold": "", "quantity": "1", "Размер": "40", "Цвет": "Зеленый"},
+        {"sku": "68413-41", "price": "32 900.00", "priceold": "", "quantity": "0", "Размер": "41", "Цвет": "Зеленый"}
+      ],
+      "characteristics": [{"title": "Пол", "value": "Мужское"}, {"title": "Материал", "value": "Текстиль & замша"}]
+    },
+    {
+      "uid": 703222292333, "title": "Кроссовки Premiata Draked 298", "descr": "Кроссовки Draked 298",
+      "price": "31920.0000", "priceold": "", "quantity": "", "brand": "PREMIATA",
+      "url": "http://www.maxmoda.ru/shoes/tproduct/178824402-703222292333-krossovki-premiata-draked-298",
+      "partuids": "[429066460061,987369287300,562760764911]",
+      "gallery": "[{\"alt\":\"фото\",\"img\":\"https:\\/\\/static.tildacdn.com\\/stor3265\\/c.jpg\"}]",
+      "editions": [
+        {"sku": "67390-38", "price": "31 920.00", "priceold": "39 900.00", "quantity": "1", "Размер": "38", "Цвет": "Белый"}
+      ],
+      "characteristics": []
+    },
+    {
+      "uid": 111, "title": "Проданная модель Premiata", "descr": "Продано",
+      "price": "10000", "priceold": "", "quantity": "", "brand": "PREMIATA",
+      "url": "https://www.maxmoda.ru/shoes/tproduct/1-111-sold",
+      "partuids": "[429066460061]",
+      "gallery": "[{\"alt\":\"фото\",\"img\":\"https:\\/\\/static.tildacdn.com\\/x.jpg\"}]",
+      "editions": [{"sku": "s", "price": "10000", "priceold": "", "quantity": "0", "Размер": "40"}],
+      "characteristics": []
+    },
+    {
+      "uid": 392289530233, "title": "Шарф Marella Merle", "descr": "Шарф Merle",
+      "price": "14900.0000", "priceold": "", "quantity": "", "brand": "MARELLA",
+      "url": "https://www.maxmoda.ru/accessories/tproduct/5109944201-392289530233-sharf-marella-merle",
+      "partuids": "[865956359370,533599596383]",
+      "gallery": "[{\"alt\":\"фото\",\"img\":\"https:\\/\\/static.tildacdn.com\\/m.jpg\"}]",
+      "editions": [],
+      "characteristics": [{"title": "Цвет", "value": "Белый"}]
+    }
+  ]
+}
