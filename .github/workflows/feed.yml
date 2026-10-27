@@ -1,0 +1,44 @@
+name: Обновить фиды товаров
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"   # каждые 3 часа
+  workflow_dispatch:          # можно запустить вручную на вкладке Actions
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Проверка на тестовых данных
+        run: python3 build_feed.py --from-json sample.json --out /tmp/test-out
+      - name: Собрать фиды с сайта
+        run: python3 build_feed.py --out public
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
